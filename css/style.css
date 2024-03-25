@@ -1,0 +1,113 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navigation bar styling */
+  nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    padding: 0 1em;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Main content area styling */
+  .main-content {
+    text-align: center;
+    padding: 2em;
+  }
+  
+  .main-content h1 {
+    color: #333;
+  }
+  
+  /* Sign up and login form styling */
+  .form-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+  
+  .form-container {
+    background: #f4f4f4;
+    padding: 2em;
+    margin: 1em;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-container h4 {
+    margin-top: 0;
+  }
+  
+  /* Input fields styling */
+  .input-field {
+    margin-bottom: 1em;
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    box-sizing: border-box; /* Makes sure padding doesn't affect the overall width */
+  }
+  
+  /* Button styling */
+  .button {
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  /* Add any additional styles as needed */
+
+  .index-login-signup, .index-login-login {
+    background-color: #fff; /* White background */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Horizontal offset, vertical offset, blur radius, color */
+    margin: 2em auto; /* Top and bottom margin is 2em, auto on left and right for centering */
+    padding: 2em; /* Padding inside the boxes */
+    width: 90%; /* Set a width */
+    max-width: 350px; /* Maximum width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  /* If these divs are side by side */
+  @media screen and (min-width: 600px) {
+    .index-login-signup, .index-login-login {
+      float: left; /* Float the containers to make them sit side by side */
+      width: calc(50% - 4em); /* Calculate width, subtracting margin */
+      margin: 2em; /* Margin around the boxes */
+    }
+  }
+  
+  /* Clear floats after the containers */
+  .index-login-container::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
